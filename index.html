@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/diplom/css/styles_new.css">
+  <link rel="stylesheet" href="/diplom/css/gear_menu.css">
+  <title>Diplom MQ</title>
+</head>
+</body>
+<!-- Меню настроек маски (фона) -->
+<!-- Кнопка шестерёнки -->
+<input id="menu-gear-id" type="checkbox" class="gear-btn">
+<label for="menu-gear-id" class="menu-btn-gear">
+  <svg class="gear_img" viewBox="0 0 1606 1613">
+    <path d="M1008 806c0,114 -91,205 -205,205 -113,0 -205,-91 -205,-205 0,-113 92,-205 205,-205 114,0 205,92 205,205zm-485 162c18,31 35,49 40,57 13,23 -3,40 -17,65l-64 111c-16,26 -44,40 -73,27 -30,-12 -92,-99 -110,-131 -18,-31 -62,-128 -58,-160 4,-32 29,-50 60,-50l128 0c28,1 51,-5 64,18 5,8 12,32 30,63zm280 161c36,1 60,-5 70,-5 26,0 33,22 47,47l65 111c15,26 12,57 -14,77 -25,19 -132,30 -168,30 -36,0 -142,-11 -168,-30 -26,-20 -28,-51 -13,-77l64 -111c15,-25 22,-47 48,-47 9,0 33,6 69,5zm280 -161c18,-31 25,-55 30,-63 13,-23 36,-17 64,-18l129 0c30,0 56,18 60,50 4,32 -41,129 -59,160 -18,32 -80,119 -109,131 -30,13 -58,-1 -74,-27l-64 -111c-14,-25 -29,-42 -17,-65 5,-8 23,-26 40,-57zm0 -323c-17,-31 -35,-50 -40,-58 -12,-22 3,-40 17,-64l64 -112c16,-26 44,-39 74,-27 29,13 91,100 109,131 18,31 63,129 59,161 -4,32 -30,49 -60,50l-129 0c-28,-1 -51,4 -64,-18 -5,-8 -12,-32 -30,-63zm-280 -162c-36,0 -60,6 -69,6 -26,0 -33,-23 -48,-47l-64 -111c-15,-27 -13,-58 13,-77 26,-19 132,-30 168,-30 36,0 143,11 168,30 26,19 29,50 14,77l-65 111c-14,24 -21,47 -47,47 -10,0 -34,-6 -70,-6zm-280 162c-18,31 -25,55 -30,63 -13,22 -36,17 -64,18l-128 0c-31,-1 -56,-18 -60,-50 -4,-32 40,-130 58,-161 18,-31 80,-118 110,-131 29,-12 57,1 73,27l64 112c14,24 30,42 17,64 -5,8 -22,27 -40,58zm355 877c25,-2 33,-2 43,33 17,54 33,43 50,40 17,-4 36,-1 29,-57 -5,-36 3,-39 26,-47 23,-7 31,-9 48,23 28,49 41,36 57,29 16,-7 35,-8 17,-62 -12,-34 -6,-38 15,-52 22,-11 29,-15 53,13 36,43 47,26 61,16 14,-10 33,-15 3,-63 -18,-31 -13,-37 5,-54 19,-16 25,-21 54,1 45,35 52,16 63,4 12,-13 29,-22 -10,-63 -25,-27 -20,-33 -7,-54 16,-19 21,-25 53,-10 52,24 55,5 63,-10 9,-15 24,-27 -22,-59 -30,-21 -27,-28 -18,-51 10,-22 14,-29 49,-21 56,13 55,-6 60,-23 5,-16 17,-31 -35,-53 -33,-14 -32,-22 -28,-46 6,-24 8,-31 45,-31 56,1 51,-17 53,-34 2,-18 10,-35 -45,-46 -36,-6 -36,-14 -37,-39 1,-24 1,-32 37,-39 55,-10 47,-28 45,-45 -2,-17 3,-36 -53,-35 -37,1 -39,-7 -45,-30 -4,-24 -5,-32 28,-46 52,-22 40,-37 35,-54 -5,-16 -4,-36 -60,-23 -35,9 -39,2 -49,-20 -9,-23 -12,-30 18,-51 46,-33 31,-45 22,-60 -8,-15 -11,-34 -63,-10 -32,16 -37,10 -53,-10 -13,-20 -18,-27 7,-53 39,-41 22,-50 10,-63 -11,-13 -18,-31 -63,3 -29,22 -35,17 -54,2 -18,-18 -23,-23 -5,-54 30,-49 11,-54 -3,-64 -14,-10 -25,-26 -62,17 -23,27 -30,24 -52,12 -21,-13 -27,-17 -15,-52 18,-53 -1,-54 -17,-61 -16,-7 -29,-21 -57,29 -17,32 -25,30 -48,23 -23,-9 -31,-11 -26,-47 7,-57 -12,-54 -29,-57 -17,-4 -33,-14 -50,40 -10,35 -18,34 -43,33 -24,-4 -32,-5 -35,-41 -4,-57 -23,-50 -40,-50 -17,0 -35,-7 -40,50 -3,36 -11,37 -35,41 -24,1 -32,2 -43,-33 -16,-54 -33,-44 -49,-40 -17,3 -36,0 -29,57 4,36 -3,38 -26,47 -24,7 -31,9 -49,-23 -27,-50 -41,-36 -57,-29 -15,7 -35,8 -16,61 12,35 5,39 -16,52 -21,12 -28,15 -52,-12 -37,-43 -48,-27 -62,-17 -13,10 -32,15 -3,64 19,31 13,36 -4,54 -19,15 -25,20 -54,-2 -45,-34 -52,-16 -64,-3 -11,13 -29,22 10,63 25,26 21,33 7,53 -15,20 -20,26 -53,10 -51,-24 -54,-5 -63,10 -8,15 -24,27 23,60 30,21 27,28 18,51 -11,22 -15,29 -50,20 -55,-13 -54,7 -59,23 -6,17 -18,32 34,54 34,14 32,22 28,46 -6,23 -8,31 -44,30 -57,-1 -52,18 -53,35 -2,17 -11,35 45,45 35,7 36,15 37,39 -1,25 -2,33 -37,40 -56,10 -47,28 -45,45 1,17 -4,36 53,34 36,0 38,7 44,31 4,24 6,32 -28,46 -52,22 -40,37 -34,53 5,17 4,36 59,23 35,-8 39,-1 50,21 9,23 12,30 -18,51 -47,32 -31,44 -23,59 9,15 12,34 63,10 33,-15 38,-9 53,10 14,21 18,27 -7,54 -39,41 -21,50 -10,63 12,12 19,31 64,-4 29,-22 35,-17 54,-1 17,17 23,23 4,54 -29,48 -10,53 3,63 14,10 25,27 62,-16 24,-28 31,-24 52,-13 21,14 28,18 16,52 -19,54 1,55 16,62 16,7 30,20 57,-29 18,-32 25,-30 49,-23 23,8 30,11 26,47 -7,56 12,53 29,57 16,3 33,14 49,-40 11,-35 19,-35 43,-33 24,4 32,5 35,41 5,56 23,49 40,49 17,0 36,7 40,-49 3,-36 11,-37 35,-41z"/>
+  </svg>
+</label>
+<!-- Конц кнопки шестерёнки -->
+
+<!-- Кнопка скрывающая фон -->
+<input id="hide-show-img-id" type="checkbox" checked>
+<!-- Кнопка перемещения фона на передний / задний план -->
+<input id="z-index-id" type="checkbox">
+
+<!-- Маска Меню настроек маски (фона) -->
+<div class="buttons-box">
+  <!-- Метка для кнопки скрывающей фон -->
+  <label for="z-index-id" class="button">з/п план</label>
+  <!-- Метка для кнопки скрывающей фон -->
+  <label for="hide-show-img-id" class="button">вкл/выкл фон</label>
+</div>
+<!-- Маска + невидимая кнопка на весь экран (растягивается за счёт координат маски) -->
+<div class="background_box_alfa"></div>
+<!-- Конец  -->
+
+<div class="background_box">
+  <!-- Невидимая кнопка на весь экран (растягивается за счёт координат background_box) -->
+  <label for="menu-gear-id" class="btn-full-bg"></label>
+  <!-- Блок шапки начало -->
+  <header class="header">
+    <div class="container_header_menu">
+      <img src="/diplom/svg/noemi-logo.svg" alt="Логотип" class="header_logo">
+      <img src="/diplom/svg/burger_menu.svg" alt="" class="burger_menu">
+      <nav class="menu">
+        <a class="menu-link" href="#0">главная</a>
+        <a class="menu-link" href="#0">посты</a>
+        <a class="menu-link" href="#0">статьи</a>
+        <a class="menu-link" href="#0">теги</a>
+        <a class="menu-link" href="#0">темы</a>
+        <a class="menu-link" href="#0">контакты</a>
+      </nav>
+    </div>
+    <h1 class="welcome_title">Блог о творчестве, спорте, и образе жизни</h1>
+  </header>
+  <!-- Блок шаппки конец -->
+
+  <!-- Блок сейчас в тренде начало -->
+  <div class="main_title text_style_bold">сейчас в тренде</div>
+
+  <div class="trends">
+    <!-- Блок 1 -->
+    <div class="trends_box">
+      <div class="trends_img_box">
+        <img class="trends_img" src="/Diplom/img/trend1.jpg" alt="конопля на подоконнике">
+      </div>
+      <div class="trends_bg_img"></div>
+      <div class="trends_content">
+        <div class="post_tag_box text_style_bold">
+          <a href="#0" class="trends_tag">lifestyle</a>
+          <a href="#0" class="trends_tag">interior</a>
+        </div>
+        <a class="trends_heading text_style_bold" href="#0">сейчас в тренде: сад на подоконнике</a>
+      </div>
+    </div>
+
+    <!-- Блок 2 -->
+    <div class="trends_box">
+      <div class="trends_img_box">
+        <img class="trends_img" src="/Diplom/img/trend2.jpg" alt="сыры на красивых картинках">
+      </div>
+      <div class="trends_bg_img"></div>
+      <div class="trends_content">
+        <div class="post_tag_box text_style_bold">
+          <a href="#0" class="trends_tag">food</a>
+          </div>
+        <a class="trends_heading text_style_bold" href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a>
+      </div>
+    </div>
+
+    <!-- Блок 3 -->
+    <div class="trends_box">
+      <div class="trends_img_box">
+        <img class="trends_img" src="/Diplom/img/trend3.jpg" alt="собираемся в первый поход в горы">
+      </div>
+      <div class="trends_bg_img"></div>
+      <div class="trends_content">
+        <div class="post_tag_box text_style_bold">
+          <a href="#0" class="trends_tag">lifestyle</a>
+          <a href="#0" class="trends_tag">travel</a>
+        </div>
+        <a class="trends_heading text_style_bold" href="#0">собираемся в первый поход в горы</a>
+      </div>
+    </div>
+
+    <!-- Блок 4 -->
+    <div class="trends_box">
+      <div class="trends_img_box">
+        <img class="trends_img" src="/Diplom/img/trend4.jpg" alt="сколько витамина с в лимонах?">
+      </div>
+      <div class="trends_bg_img"></div>
+      <div class="trends_content">
+        <div class="post_tag_box text_style_bold">
+          <a href="#0" class="trends_tag">food</a>
+          <a href="#0" class="trends_tag">health</a>
+        </div>
+        <a class="trends_heading text_style_bold" href="#0">сейчас в тренде: сколько витамина с в лимонах?</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Блок сейчас в тренде конец -->
+
+  <!-- Блок main начало -->
+  <main class="main">
+    <!-- Левый Блок с постами начало -->
+    <article class="main_posts_box">
+      <!-- Блок №1 -->
+      <section class="post">
+        <div class="post_img_box">
+          <img class="post_img" src="/Diplom/img/last-post1.jpg" alt="10 мест, ради которых стоит проснуться...">
+        </div>
+        <div class="post_content">
+          <div class="post_tag_box text_style_bold">
+            <a href="#0" class="post_tag">travel</a>
+            <a href="#0" class="post_tag">health</a>
+          </div>
+          <a class="post_heading text_style_bold" href="#0">10 мест, ради которых стоит проснуться на рассвете</a>
+          <p class="author"><time datetime="2019-06-10">10 июня 2019</time>Неизвестный автор</p>
+          <p class="post_text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+        </div>
+      </section>
+      <!-- Блок №2 -->
+      <section class="post">
+        <div class="post_img_box">
+          <img class="post_img" src="/Diplom/img/last-post2.jpg" alt="йога для начинающих...">
+        </div>
+        <div class="post_content">
+          <div class="post_tag_box text_style_bold">
+            <a href="#0" class="post_tag">health</a>
+            <a href="#0" class="post_tag">lifestyle</a>
+          </div>
+          <a class="post_heading text_style_bold" href="#0">йога для начинающих в домашних условиях</a>
+          <p class="author"><time datetime="2019-06-10">10 июня 2019</time>Неизвестный автор</p>
+          <p class="post_text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+        </div>
+      </section>
+      <!-- Блок №3 -->
+      <section class="post">
+        <div class="post_img_box">
+          <img class="post_img" src="/Diplom/img/last-post3.jpg" alt="Лучшие музыкальные фестивали этого лета...">
+        </div>
+        <div class="post_content">
+          <div class="post_tag_box text_style_bold">
+            <a href="#0" class="post_tag">music</a>
+          </div>
+          <a class="post_heading text_style_bold" href="#0">Лучшие музыкальные фестивали этого лета</a>
+          <p class="author"><time datetime="2019-06-10">10 июня 2019</time>Неизвестный автор</p>
+          <p class="post_text_first">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
+          <p class="post_text">Мы составили список лучших летних фестивалей по всему миру.</p>
+        </div>
+      </section>
+      <!-- Блок №4 -->
+      <section class="post">
+        <div class="post_img_box">
+          <img class="post_img" src="/Diplom/img/last-post4.jpg" alt="Наукоёмкий подход к кулинарии...">
+        </div>
+        <div class="post_content">
+          <div class="post_tag_box text_style_bold">
+            <a href="#0" class="post_tag">lyfestyle</a>
+            <a href="#0" class="post_tag">food</a>
+          </div>
+          <a class="post_heading text_style_bold" href="#0">Наукоёмкий подход к кулинарии</a>
+          <p class="author"><time datetime="2019-06-10">10 июня 2019</time>Неизвестный автор</p>
+          <p class="post_text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+        </div>
+      </section>
+      <!-- Блок №5 -->
+      <section class="post">
+        <div class="post_img_box">
+          <img class="post_img" src="/Diplom/img/last-post5.jpg" alt="делаем модные принты на подушках для интерьера ...">
+        </div>
+        <div class="post_content">
+          <div class="post_tag_box text_style_bold">
+            <a href="#0" class="post_tag">lifestyle</a>
+            <a href="#0" class="post_tag">interior</a>
+            <a href="#0" class="post_tag">art</a>
+          </div>
+          <a class="post_heading text_style_bold" href="#0">делаем модные принты на подушках для интерьера </a>
+          <p class="author"><time datetime="2019-06-10">10 июня 2019</time>Неизвестный автор</p>
+          <p class="post_text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
+        </div>
+      </section>
+    </article>
+    <!-- Левый блок с постами конец -->
+    <!-- Правый блок с постами начало -->
+    <div class="main_content_box">
+      <!-- Заголовок "Новые посты" -->
+      <div class="sidebar_heading text_style_bold">новые посты</div>
+      <!-- Маленькие посты -->
+      <aside class="sidebar_post_box">
+        <!-- Блок №1 -->
+        <section class="sidebar_post">
+          <div class="sidebar_post_img_box">
+            <img class="sidebar_post_img" src="/Diplom/img/2.jpg" alt="10 мест, ради которых стоит проснуться...">
+          </div>
+          <div class="sidebar_post_content">
+            <time datetime="2019-06-14">14 июня 2019</time>
+            <a class="sidebar_post_heading text_style_bold" href="#0">10 мест, ради которых стоит проснуться</a>
+          </div>
+        </section>
+        <!-- Блок №2 -->
+        <section class="sidebar_post">
+          <div class="sidebar_post_img_box">
+            <img class="sidebar_post_img" src="/Diplom/img/151.jpg" alt="йога для домашних...">
+          </div>
+          <div class="sidebar_post_content">
+            <time datetime="2019-06-14">14 июня 2019</time>
+            <a class="sidebar_post_heading text_style_bold" href="#0">Йога для домашних</a>
+          </div>
+        </section>
+        <!-- Блок №3 -->
+        <section class="sidebar_post">
+          <div class="sidebar_post_img_box">
+            <img class="sidebar_post_img" src="/Diplom/img/45.jpg" alt="как мы превратили классное место в балкон...">
+          </div>
+          <div class="sidebar_post_content">
+            <time datetime="2019-06-14">14 июня 2019</time>
+            <a class="sidebar_post_heading text_style_bold" href="#0">как мы превратили классное место в балкон</a>
+          </div>
+        </section>
+        <!-- Блок №4 -->
+        <section class="sidebar_post">
+          <div class="sidebar_post_img_box">
+            <img class="sidebar_post_img" src="/Diplom/img/501.jpg" alt="кулинарный подход к науке...">
+          </div>
+          <div class="sidebar_post_content">
+            <time datetime="2019-06-14">14 июня 2019</time>
+            <a class="sidebar_post_heading text_style_bold" href="#0">кулинарный подход к науке</a>
+          </div>
+        </section>
+        <!-- Блок №5 -->
+        <section class="sidebar_post">
+          <div class="sidebar_post_img_box">
+            <img class="sidebar_post_img" src="/Diplom/img/7.jpg" alt="лучшие прически для распущенных волос...">
+          </div>
+          <div class="sidebar_post_content">
+            <time datetime="2019-06-14">14 июня 2019</time>
+            <a class="sidebar_post_heading text_style_bold" href="#0">лучшие прически для распущенных волос</a>
+          </div>
+        </section>
+      </aside>
+      <!-- Форма поиска -->
+      <form class="search_box">
+        <label class="search-group">
+          <input type="" class="field_search" name="" placeholder="Найти..." required>
+        </label>
+        <button type="submit" class="button_search"></button>
+      </form>
+      <!-- Заголовок "Рассылка" -->
+      <div class="sidebar_heading text_style_bold">рассылка</div>
+      <!-- Форма подписки -->
+      <form class="subscription_box">
+        <label class="subscription-group">
+          <input type="email" class="field_email" placeholder="Ваш email-адрес" required>
+        </label>
+        <button type="submit" class="button_email text_style_bold">подписаться</button>
+      </form>
+      <!-- Заголовок Теги -->
+      <div class="sidebar_heading text_style_bold">теги</div>
+      <section class="tags_box text_style_bold">
+        <a class="tags_href" href="#0">fashion</a>
+        <a class="tags_href" href="#0">music</a>
+        <a class="tags_href" href="#0">lifestyle</a>
+        <a class="tags_href" href="#0">art</a>
+        <a class="tags_href" href="#0">interior</a>
+        <a class="tags_href" href="#0">travel</a>
+        <a class="tags_href" href="#0">food</a>
+        <a class="tags_href" href="#0">health</a>
+      </section>
+
+      <div class="sidebar_heading text_style_bold">темы</div>
+      <section class="thems_box">
+        <a class="thems_href" href="#0">Красота <span class="number">12</span></a>
+        <a class="thems_href" href="#0">Здоровье <span class="number">4</span></a>
+        <a class="thems_href" href="#0">Образ жизни <span class="number">145</span></a>
+        <a class="thems_href" href="#0">Музыка <span class="number">28</span></a>
+        <a class="thems_href" href="#0">Спорт <span class="number">62</span></a>
+        <a class="thems_href" href="#0">Йога <span class="number">8</span></a>
+      </section>
+    </div>
+    <!-- Правый блок с постами конец -->
+  </main>
+  <!-- Блок наши изделия -->
+  <div class="main_title text_style_bold">наши изделия</div>
+
+  <div class="shop">
+    <!-- Блок №1 -->
+    <div class="shop_box">
+      <div class="shop_box_img">
+        <img class="shop_img_desk" src="/Diplom/img/shop-item-desk1.jpg" alt="подушки на диван">
+        <img class="shop_img_tablet" src="/Diplom/img/shop-item-tablet1.jpg" alt="подушки на диван">
+        <img class="shop_img_mobile" src="/Diplom/img/shop-item-mobile1.jpg" alt="подушки на диван">
+      </div>
+      <div class="shop_content_box">
+          <p class="shop_title">подушки на диван</p>
+          <p class="shop_text">Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="shop_text_href">здесь</a>.</p>
+        <div class="shop_footer">
+          <div class="shop_price_box">
+            <p class="shop_price">1000 &#8381;</p>
+            <p class="shop_discount">800 &#8381;</p>
+          </div>
+          <button class="shop_btn" type="button">в магазин</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Блок №2 -->
+      <div class="shop_box">
+        <div class="shop_box_img">
+          <img class="shop_img_desk" src="/Diplom/img/shop-item-desk2.jpg" alt="кукла «зайчик»">
+          <img class="shop_img_tablet" src="/Diplom/img/shop-item-tablet2.jpg" alt="кукла «зайчик»">
+          <img class="shop_img_mobile" src="/Diplom/img/shop-item-mobile2.jpg" alt="кукла «зайчик»">
+        </div>
+        <div class="shop_content_box">
+          <p class="shop_title">кукла «зайчик»</p>
+          <p class="shop_text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="shop_text_href">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+          <div class="shop_footer">
+            <div class="shop_price_box">
+              <p class="shop_price"></p>
+              <p class="shop_discount">3500 &#8381;</p>
+            </div>
+            <button class="shop_btn" type="button">в магазин</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Блок №3 -->
+      <div class="shop_box">
+        <div class="shop_box_img">
+          <img class="shop_img_desk" src="/Diplom/img/shop-item-desk3.jpg" alt="шестиугольная рамка">
+          <img class="shop_img_tablet" src="/Diplom/img/shop-item-tablet3.jpg" alt="шестиугольная рамка">
+          <img class="shop_img_mobile" src="/Diplom/img/shop-item-mobile3.jpg" alt="шестиугольная рамка">
+        </div>
+        <div class="shop_content_box">
+          <p class="shop_title">шестиугольная рамка</p>
+          <p class="shop_text">Необычная рамка для украшения дома из видео <a href="#0" class="shop_text_href">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+          <div class="shop_footer">
+            <div class="shop_price_box">
+              <p class="shop_price">500 &#8381;</p>
+              <p class="shop_discount">400 &#8381;</p>
+            </div>
+            <button class="shop_btn" type="button">в магазин</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+  <!-- Блок наши изделия конец-->
+  <!-- Блок main конец -->
+
+  <!-- footer начало -->
+    <footer class="footer">
+      <!-- Блок соц иконок -->
+      <div class="social_box">
+        <a href="#0" class="social_link">
+          <img src="/diplom/svg/004-twitter.svg" alt="twitter" class="social_img">
+          <span class="social_text">twitter</span>
+        </a>
+        <a href="#0" class="social_link">
+          <img src="/diplom/svg/001-pinterest.svg" alt="" class="social_img">
+          <span class="social_text">pinterest</span>
+        </a>
+        <a href="#0" class="social_link">
+          <img src="/diplom/svg/002-facebook-logo.svg" alt="" class="social_img">
+          <span class="social_text">facebook</span>
+        </a>
+        <a href="#0" class="social_link">
+          <img src="/diplom/svg/005-instagram.svg" alt="" class="social_img">
+          <span class="social_text">instagram</span>
+        </a>
+        <a href="#0" class="social_link">
+          <img src="/diplom/svg/003-tumblr.svg" alt="" class="social_img">
+          <span class="social_text">tumblr</span>
+        </a>
+      </div>
+      <!-- Блок копирайта -->
+      <span>
+        <a class="copyrights_box" href="#0">Copyright © 2009–2019 City Blog LLC.</a>
+      </span>
+    </footer>
+    <!-- footer конец -->
+
+
+  <div class="_hidden">
+    <div class="popup">
+      <div class="popup__container">
+        <div class="feedback">
+          <div class="feedback__header">
+            <h3 class="feedback-title">ваш фидбэк</h3>
+          </div>
+          <div class="feedback__content">
+            <form class="feedback__form">
+              <div class="form__row">
+                <label class="select-group">
+                  <span class="form__hint">Как часто вы заходите на сайт?</span>
+                  <select class="select">
+                    <option value="group">почти каждый день</option>
+                    <option value="group">раз в неколько дней</option>
+                    <option value="group">раз в неколько недель</option>
+                    <option value="group">неколько раз в год</option>
+                  </select>
+                </label>
+
+              </div>
+
+              <div class="form__row">
+                <div class="form-group">
+                  <span class="form__hint">Вы подписаны на e-mail рассылку?</span>
+                  <div class="check">
+                    <div class="form-radio">
+                      <input type="radio" class="radio-check" id="radio-group" name="radio-group" value="yes" required="">
+                      <label for="radio-group">Да</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" class="radio-check" id="radio-group-two" name="radio-group" value="yes" required="">
+                      <label for="radio-group-two">Нет</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label">
+                  <span class="form__hint">Расскажите, какой контент вы хотите увидеть на нашем сейте?</span>
+                  <textarea class="field" placeholder="Может, больше рецептов?" rows="6" required=""></textarea>
+                </label>
+              </div>
+
+              <div class="form__row">
+                <button class="popup_button">Отправить</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <button class="popup__close" type="button">Закрыть окно</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

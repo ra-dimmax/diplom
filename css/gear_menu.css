@@ -1,0 +1,115 @@
+:root {
+--width-gear: 35px; /*ширина svg картинки (в данном случае шестерни)*/
+--menu-gear-top: 35px; /*переменная, отвечает за отступ меню сверху */
+--menu-gear-width: 150px; /*переменная, отвечает за ширину меню, а так же за правую позицию при скрытии (просто отрицательное значение) */
+}
+
+.background_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Маска */
+.background_box_alfa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Скрывает все чекбоксы */
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* Стили для шестерёнки, класс от label.*/
+.menu-btn-gear {
+  position: fixed;
+  transition: all 0.5s;
+  padding: 3px 3px 0px 3px;
+  top: calc(var(--menu-gear-top) + 3px);
+  right: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Заливка и ширина svg картинки, вставленной в html */
+.gear_img {
+  width: var(--width-gear);
+  fill: green;
+}
+
+.gear_img:hover {
+  fill: #004B29;
+}
+
+/* Стиль который изменяет позицию с отрицательной, на положительную, тем самым выдвигая меню, знак "+" означает что будет так же пименяться к элементу следующему за input */
+#menu-gear-id:checked + .menu-btn-gear {
+  right: var(--menu-gear-width);
+  transform: rotate(360deg);
+}
+
+/* Растянет невидимую кнопку на весь экран, при установленной галочке в input, позволив закрывать меню, при нажатии на любую часть экрана */
+#menu-gear-id:checked ~ .background_box > .btn-full-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+
+/* Выдвигает меню с кнопками */
+#menu-gear-id:checked ~ .buttons-box {
+  right: 0px;
+}
+
+
+/* Коробка для кнопок */
+.buttons-box {
+  transition: all 0.5s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: var(--menu-gear-top);
+  right: calc(var(--menu-gear-width) * -1); /* Задаёт начальное отрицательное значение, прячя меню с кнопками за экраном */
+  width: var(--menu-gear-width);
+  z-index: 9;
+}
+
+/* Стиль кнопки */
+.button {
+  width: calc(var(--menu-gear-width) - 15px);;
+  padding: 10px 0;
+  margin-top: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(180deg, #0DA861 60%, #006332);
+  border: 2px solid #009F52;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #009F52 60%, #003821);
+}
+
+.button:active{
+  transform: translateY(1px);
+}
+
+/* Скрываем нашу маску (фона) */
+#hide-show-img-id:checked ~ .background_box_alfa {
+  display: none;
+}
+
+/* Меняем положение нашей маски (фона) */
+#z-index-id:checked ~ .background_box_alfa {
+  z-index: 1;
+}
