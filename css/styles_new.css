@@ -32,14 +32,14 @@ body {
 .background_box_alfa {
   width: 1660px;
   height: 3508px;
-  background-image: url("/Diplom/img/NOEMI_mq_desktop.jpg");
+  background-image: url("/diplom/img/NOEMI_mq_desktop.jpg");
 }
 
 @media (max-width: 768px) {
   .background_box_alfa {
     width: 768px;
     height: 5230px;
-    background-image: url("/Diplom/img/NOEMI_mq_tablet_my.jpg");
+    background-image: url("/diplom/img/NOEMI_mq_tablet_my.jpg");
   }
 }
 
@@ -47,7 +47,7 @@ body {
   .background_box_alfa {
     width: 360px;
     height: 7464px;
-    background-image: url("/Diplom/img/NOEMI_mq_mobile.jpg");
+    background-image: url("/diplom/img/NOEMI_mq_mobile.jpg");
   }
 }
 /* --------Конец авто смены привьюшки, от разрешения экрана-------- */
@@ -66,7 +66,7 @@ body {
   padding-right: calc( (100vw - 768px)/(1660 - 768) * (245 - 33) + 33px);
 
   background-color: #666666;
-  background-image: url("/Diplom/img/banner-bg.jpg");
+  background-image: url("/diplom/img/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -147,7 +147,7 @@ body {
 
 @media (max-width: 1200px) {
   .header {
-    background-image: url("/Diplom/img/banner-bg-tablet.jpg");
+    background-image: url("/diplom/img/banner-bg-tablet.jpg");
     background-position: center;
   }
 
@@ -182,7 +182,7 @@ body {
   .header {
     padding-left: 33px;
     padding-right: 33px;
-    background-image: url("/Diplom/img/banner-mobile.jpg");
+    background-image: url("/diplom/img/banner-mobile.jpg");
   }
 
   .container_header_menu{
@@ -670,7 +670,7 @@ time {
   cursor: pointer;
 
   background-color: var(--color-style);
-  background-image: url("/Diplom/svg/search.svg");
+  background-image: url("/diplom/svg/search.svg");
   background-size: 20px;
   background-position: center;
   background-repeat: no-repeat;
