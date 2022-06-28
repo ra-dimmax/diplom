@@ -688,7 +688,7 @@ time {
 
 /* Форма ввода */
 .field_search {
-  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
 
   width: 100%;
   padding-left: 20px;
@@ -711,7 +711,7 @@ time {
 }
 
 .field_email {
-  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
   padding-left: 20px;
   font-size: 14px;
   width: 100%;
